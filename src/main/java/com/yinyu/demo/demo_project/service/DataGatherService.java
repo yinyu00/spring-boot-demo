@@ -43,6 +43,7 @@ public class DataGatherService {
 
             while (!queue.isEmpty()) {
                 log.warn("waiting for close, queue.size = {}", queue.size());
+                log.warn("consuming data = {}", consume());
                 Thread.currentThread().sleep(3000);
             }
 
